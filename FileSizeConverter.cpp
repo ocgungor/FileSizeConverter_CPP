@@ -1,30 +1,5 @@
-FileSizeConverter_CPP
-=====================
-
-Converts given bytes into a human readable format in CPP
-
-Documentation
-==============
-Add FileSizeConverter.cpp and FileSizeConverter.h into your project and `#include "FileSizeConverter.h"` wherever you need to calculate size of a file. And simply follow the instructions:
-
-Create a new FileSizeConverter object
-```
-    FileSizeConverter *converter = new FileSizeConverter();
-```
-Call `convertBytes` method and pass the size in bytes
-```
-    converter->convertBytes(100000000000000);
-```
-Destroy the converter when you are done with it
-```
-    delete converter;
-```
-
-
-Copyright
-==============
-```
 /*
+ * FileSizeConverter.cpp
  * FileSizeConverter_CPP
  *
  * Created by Oguzhan Cansin Gungor on 16/05/13.
@@ -59,4 +34,45 @@ Copyright
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-```
+
+
+#import "FileSizeConverter.h"
+#include <sstream>
+#include <string>
+#include <cmath>
+
+std::string FileSizeConverter::convertBytes(long size){
+
+    std::string formattedStr;
+    std::stringstream sstm;
+
+    if (size == 0)
+		formattedStr = "Empty";
+    
+    else if (size > 0 && size < 1024) {
+        sstm << size << " bytes";
+        formattedStr = sstm.str();
+    }
+    
+    else if (size >= 1024 && size < pow(1024, 2)) {
+        sstm << (size / 1024.) << " KB";
+        formattedStr = sstm.str();
+    }
+    
+    else if (size >= pow(1024, 2) && size < pow(1024, 3)) {
+        sstm << (size / pow(1024, 2)) << " MB";
+        formattedStr = sstm.str();
+    }
+        
+    else if (size >= pow(1024, 3) && size < pow(1024, 4)) {
+        sstm << (size / pow(1024, 3)) << " GB";
+        formattedStr = sstm.str();
+    }
+
+    else if (size >= pow(1024, 4)){
+        sstm << (size / pow(1024, 4)) << " TB";
+        formattedStr = sstm.str();
+    }
+    
+    return formattedStr;
+}

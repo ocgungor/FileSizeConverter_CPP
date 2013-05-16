@@ -1,30 +1,5 @@
-FileSizeConverter_CPP
-=====================
-
-Converts given bytes into a human readable format in CPP
-
-Documentation
-==============
-Add FileSizeConverter.cpp and FileSizeConverter.h into your project and `#include "FileSizeConverter.h"` wherever you need to calculate size of a file. And simply follow the instructions:
-
-Create a new FileSizeConverter object
-```
-    FileSizeConverter *converter = new FileSizeConverter();
-```
-Call `convertBytes` method and pass the size in bytes
-```
-    converter->convertBytes(100000000000000);
-```
-Destroy the converter when you are done with it
-```
-    delete converter;
-```
-
-
-Copyright
-==============
-```
 /*
+ * FileSizeConverter.h
  * FileSizeConverter_CPP
  *
  * Created by Oguzhan Cansin Gungor on 16/05/13.
@@ -59,4 +34,16 @@ Copyright
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-```
+
+#ifndef __Factorial_CPP__Factorial__
+#define __Factorial_CPP__Factorial__
+
+#include <iostream>
+
+class FileSizeConverter
+{
+public:
+    std::string convertBytes( long size);    
+};
+
+#endif /* defined(__Factorial_CPP__Factorial__) */

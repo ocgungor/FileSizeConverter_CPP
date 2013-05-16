@@ -1,0 +1,230 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5669D9BE17280327006B9B40 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5669D9BD17280327006B9B40 /* main.cpp */; };
+		5669D9C017280327006B9B40 /* FileSizeConverter_CPP.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5669D9BF17280327006B9B40 /* FileSizeConverter_CPP.1 */; };
+		56A51D571744C6E9005500B5 /* FileSizeConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56A51D551744C6E9005500B5 /* FileSizeConverter.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5669D9B817280327006B9B40 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				5669D9C017280327006B9B40 /* FileSizeConverter_CPP.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5669D9BA17280327006B9B40 /* FileSizeConverter_CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FileSizeConverter_CPP; sourceTree = BUILT_PRODUCTS_DIR; };
+		5669D9BD17280327006B9B40 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5669D9BF17280327006B9B40 /* FileSizeConverter_CPP.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FileSizeConverter_CPP.1; sourceTree = "<group>"; };
+		56A51D551744C6E9005500B5 /* FileSizeConverter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileSizeConverter.cpp; path = ../FileSizeConverter.cpp; sourceTree = "<group>"; };
+		56A51D561744C6E9005500B5 /* FileSizeConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSizeConverter.h; path = ../FileSizeConverter.h; sourceTree = "<group>"; };
+		56A51D581744C7B4005500B5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5669D9B717280327006B9B40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5669D9B117280327006B9B40 = {
+			isa = PBXGroup;
+			children = (
+				56A51D581744C7B4005500B5 /* README.md */,
+				56A51D551744C6E9005500B5 /* FileSizeConverter.cpp */,
+				56A51D561744C6E9005500B5 /* FileSizeConverter.h */,
+				5669D9BC17280327006B9B40 /* FileSizeConverter_CPP */,
+				5669D9BB17280327006B9B40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5669D9BB17280327006B9B40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5669D9BA17280327006B9B40 /* FileSizeConverter_CPP */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5669D9BC17280327006B9B40 /* FileSizeConverter_CPP */ = {
+			isa = PBXGroup;
+			children = (
+				5669D9BD17280327006B9B40 /* main.cpp */,
+				5669D9BF17280327006B9B40 /* FileSizeConverter_CPP.1 */,
+			);
+			path = FileSizeConverter_CPP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5669D9B917280327006B9B40 /* FileSizeConverter_CPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5669D9C317280327006B9B40 /* Build configuration list for PBXNativeTarget "FileSizeConverter_CPP" */;
+			buildPhases = (
+				5669D9B617280327006B9B40 /* Sources */,
+				5669D9B717280327006B9B40 /* Frameworks */,
+				5669D9B817280327006B9B40 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileSizeConverter_CPP;
+			productName = FileSizeConverter_CPP;
+			productReference = 5669D9BA17280327006B9B40 /* FileSizeConverter_CPP */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5669D9B217280327006B9B40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Oguzhan Gungor";
+			};
+			buildConfigurationList = 5669D9B517280327006B9B40 /* Build configuration list for PBXProject "FileSizeConverter_CPP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5669D9B117280327006B9B40;
+			productRefGroup = 5669D9BB17280327006B9B40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5669D9B917280327006B9B40 /* FileSizeConverter_CPP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5669D9B617280327006B9B40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5669D9BE17280327006B9B40 /* main.cpp in Sources */,
+				56A51D571744C6E9005500B5 /* FileSizeConverter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5669D9C117280327006B9B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5669D9C217280327006B9B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5669D9C417280327006B9B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5669D9C517280327006B9B40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5669D9B517280327006B9B40 /* Build configuration list for PBXProject "FileSizeConverter_CPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5669D9C117280327006B9B40 /* Debug */,
+				5669D9C217280327006B9B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5669D9C317280327006B9B40 /* Build configuration list for PBXNativeTarget "FileSizeConverter_CPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5669D9C417280327006B9B40 /* Debug */,
+				5669D9C517280327006B9B40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5669D9B217280327006B9B40 /* Project object */;
+}
